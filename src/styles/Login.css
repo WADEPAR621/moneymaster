@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background-image: url(https://img.freepik.com/fotos-premium/terapia-relajante-tratamiento-spa-piedras-orientales-arena_207634-3546.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
+header{
+    width: 100%;
+    background-color: rgb(142, 243, 149);
+    position: sticky;
+    top: 0;
+    height: 6rem;
+    z-index: 100;
+}
+header img{
+    margin: 1rem auto auto 2rem;
+    height: 75%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    background-image: linear-gradient(0, rgba(0,0,0,0.001), rgba(0,0,0,0.1));
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    gap: 60px;
+    
+}
+.form-group__LOGIN{
+    border-radius: 12px;
+    position: relative;
+    inset: 2px;
+    width: 400px;
+    background: rgba(140, 211, 145, 0.2);
+    min-height: 350px;
+    border: 3px solid rgba(19, 144, 36, 0.5);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 1px 2px 35px rgba(58, 197, 60, 0.836);
+}
+
+.form-group__LOGIN .inputbox{
+    position: relative;
+    margin: 30px 0 ;
+    width: 310px;
+    border-bottom: 2px solid rgb(0, 54, 14);
+}
+
+
+.form-group__LOGIN .inputbox__label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(6, 49, 0);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    opacity: .7;
+}
+.form-group__LOGIN.inputbox__input:focus ~ .inputbox__label, .inputbox__input:valid ~ .inputbox__label{
+    top: -5px ;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.form-group__LOGIN .inputbox__input{
+    width: 100%;
+    height: 50px ;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color:rgb(0, 0, 0) ;
+
+}
+
+.form-group__LOGIN h1{
+    color: rgb(2, 43, 9);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-group__LOGIN .inputbox ion-icon{
+    color: rgb(2, 50, 0);
+    position: absolute;
+    left: 90%;
+    height: 5vh;
+    width: 10%;
+    top: 20%
+}
+.form-group__LOGIN .boton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color:rgb(31, 157, 31);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 15px;
+    }
+    .boton a {
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .boton:hover a{
+        font-size: 22px;
+        padding: 0px;
+    }.display_entrada{
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        background-color: rgb(104, 208, 137);
+        border-radius: 25px;
+        border: .2vh solid;
+        top: 0%;
+    }.display_entrada label{
+        margin: .2vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 1% 1% 2vh;
+        font-size: 25px;
+    }.display_entrada .round{
+        text-decoration: none;
+    }

@@ -1,0 +1,254 @@
+/*body*/
+.bodys{
+    background-image: url("https://i.pinimg.com/236x/3a/41/08/3a41087a2866e762754ddcdcf886df3e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    display: grid;
+    grid-template-columns: 48% 47% 1fr;
+    grid-template-rows: 6rem 80% 1fr;
+    margin: 0;
+    margin-right: 5px;
+    max-height: 100%;
+}
+/*header*/
+.menu{
+    width: 100%;
+    background-color: rgb(142, 243, 149);
+    position: sticky;
+    top: 0;
+    grid-column: 1 / 4;
+    z-index: 100;
+}
+.menu img{
+    margin: 1rem auto auto 2rem;
+    height: 75%;
+}
+
+/*LOGO*/
+#LOGO{
+    width: 77%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+/*Textos*/
+.bodys:nth-child(3){
+    margin-left: 45%;
+    margin-right: 10%;
+    height: 31rem;
+}
+#Div1p1{
+    margin: 0;
+}
+#Divh1, #Div1p1, #ul1, #ul2, #ul3, #ul4{
+    font-size: 1.5rem;
+    letter-spacing: 1mm;
+    line-height: 1.2;
+    color: rgb(0, 45, 0);
+    margin: 0, 100px, 0, 100px;
+    padding-left: 4rem;
+
+}
+/*MONEY MASTER*/
+.contexto #Div1h1{
+    font-size: 60px;
+    color: rgb(14, 13, 57);
+    margin-top: 0;
+    margin-bottom: 0;
+  }.contexto #Div1h1:hover{
+    text-shadow: 2px 2px 45px rgb(2, 80, 2);
+  }.contexto #Div1p1{
+    font-size: 20px;
+  }.contexto .Opciones{
+    display: flexbox;
+    padding-left: 6%;
+    margin-top: 2.2%;
+    font-size: 20px;
+}
+/*Botones*/
+.funciones{
+    display: flex;
+    width: 100%;
+    height: 16%;
+    border: 3px solid rgb(2, 41, 2);
+    border-radius: 27px;
+    text-align: center;
+  }.funciones__signup{
+    font-family: 'Space Mono', monospace !important;
+    width: 50%;
+    display: flex;
+    padding: 2.5% 12.5%;
+    background-color: transparent;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-right: 1.5rem solid rgb(2, 49, 2);
+    font-family: 'lobster';
+    font-size: 2rem;
+    color: rgb(0, 85, 0);
+  }.funciones__Login{
+    font-family: 'Space Mono', monospace !important;
+    display: flex;
+    padding: 2.5% 12.5%;
+    background-color: transparent;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-left: 1.5rem solid rgb(4, 45, 4);
+    font-family: 'lobster';
+    font-size: 2rem;
+    color: rgb(0, 85, 0);
+    transition: all 0.2s;
+  }.funciones__Login:hover{
+    text-shadow: 1px 2px 15px rgb(0, 189, 0);
+    .Square{
+            background-color: rgb(44, 232, 232);
+            height: 28rem;
+            width: 28rem;
+            top: 25%;
+            left: 55%;
+            rotate: 86deg;
+            opacity: .5;
+    }
+  }.funciones__signup:hover:hover{
+    text-shadow: 1px 2px 15px rgb(0, 189, 0);
+    .Square{
+        background-color: rgb(145, 252, 52);
+        height: 28rem;
+        width: 28rem;
+        top: 25%;
+        left: 55%;
+        rotate: 86deg;
+        opacity: .5;
+    }
+  }.funciones__signup:hover{
+    text-shadow: 1px 2px 15px rgb(0, 189, 0);
+}
+
+/*aside*/
+.sources a{
+    position: sticky;
+    top: 8rem;
+}
+.Sources a img{
+    width: 100%;
+    background-color: rgba(2, 162, 21, 0.812);
+    object-fit: contain;
+    border: 1px solid rgb(0,0,0) ;
+    border-radius: 19%;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(0,0,0);
+    grid-row: 3/3;
+}
+.Square{
+    position: absolute;
+    background-color: rgb(148, 228, 155);
+    height: 8rem;
+    width: 8rem;
+    top: 30%;
+    left: 58%;
+    rotate: 30deg;
+    z-index: -1;
+    opacity: .0;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+#hexagono{
+    position: absolute;
+    background-color: rgb(91, 217, 102);
+    height: 35%;
+    width: 29.6%;
+    top: 16rem;
+    left: 8rem;
+    z-index: -1;
+    rotate: 20deg;
+    opacity: .5;
+    transition: all 2s;
+}
+#hexagono:before {
+    background: inherit;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transform: rotate(-60deg);
+    transform-origin: 50% 50%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+#hexagono:after {
+    background: inherit;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transform: rotate(60deg);
+    transform-origin: 50% 50%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+
+@media screen and (max-width: 950px){
+    .bodys{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .menu{
+        height: 4rem;
+        .menu__icon{
+            margin: 1rem auto auto 2rem;
+            height: 0;
+        }
+    }
+
+    .Sources a img{
+            display: none;
+        }
+    .funciones__signup:hover:hover{
+        text-shadow: 1px 2px 15px rgb(0, 189, 0);
+        .Square{
+            background-color: rgb(145, 252, 52);
+            height: 12%;
+            width: 12%;
+            top: 25%;
+            left: 55%;
+            rotate: 86deg;
+            opacity: .5;
+        }
+    }
+    #hexagono{
+        height: 22.5%;
+        width: 45.8%;
+        top: 12.5rem;
+        left: 25%;
+    }
+    .funciones__signup{
+        width: 21%;
+        font-size: 1.4rem;
+    }
+    
+    .funciones__Login{
+        width: 21%;
+        font-family: 'lobster';
+        font-size: 1.5rem;
+    }
+    #Divh1, #Div1p1, #ul1, #ul2, #ul3, #ul4{
+        letter-spacing: .6mm;
+        line-height: 1.08;
+        padding-left: 0rem;
+    }
+}

@@ -1,0 +1,529 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+/*HEADER*/
+.menu {
+  width: 100%;
+  background-color: rgb(142, 243, 149);
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+}
+.menu__icon {
+  margin: 1rem auto auto 2rem;
+  height: 75%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 26px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgba(85, 234, 44, 0.73);
+  color: black;
+}
+.topnav a.active {
+  background-color: rgb(142, 243, 149);
+  color: rgb(0, 0, 0);
+}
+.topnav .search-container {
+  float: right;
+  padding: 27px 2px;
+}
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+/*BODY*/
+body {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/*Regresar*/
+
+/*Totality*/
+.Totality-grid {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 94% 6%;
+  grid-auto-rows: minmax(2%, auto);
+  grid-gap: 1%;
+  width: 93%;
+  text-align: center;
+  align-items: center;
+  margin: 20px 80px;
+  padding-left: 0%;
+}
+
+/*PreTabla*/
+.Pretabla-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-column: 1 / 3;
+  height: 50%;
+  margin: 2.5%;
+}
+.Pretabla-flex .Regresar-link {
+  width: 4%;
+  height: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  margin: 0px;
+  background-color: rgb(85, 234, 44);
+}
+.Regresar-link img {
+  width: 100%;
+}
+.Pretabla-flex__ParticionesTexto {
+  color: rgb(10, 54, 5);
+  font-size: 24px;
+  display: inline;
+  margin: 0 30% 0 10%;
+}
+.Pretabla-flex .Pretabla-flex__Agregar{
+  border-radius: 15px;
+  width: 7vh;
+  height: 7vh;
+  background-color: rgb(142, 243, 149);
+  cursor: pointer;
+}
+
+/*aside*/
+.Sources {
+  position: sticky !important;
+  margin: 0;
+  width: 100%;
+  position: sticky;
+  right: 0%;
+}
+.Sources .link img {
+  position: relative;
+  width: 100%;
+  background-color: rgba(2, 162, 21, 0.812);
+  object-fit: contain;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 19%;
+  top: -100%;
+}
+
+/*Septima Particion*/
+.Tabla {
+  border: 4px solid rgb(0, 0, 0);
+  margin: 0px 40px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 40px rgb(85, 234, 44);
+  width: 88%;
+  overflow: auto;
+  max-height: 65vh;
+}
+.Tabla .Particion {
+  text-align: justify;
+  border: 2px solid rgb(10, 54, 5);
+  border-radius: 18px;
+  margin: 22px 40px 10px 40px;
+  width: 90%;
+  background-color: transparent;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  text-decoration: none;
+  color: rgb(40, 91, 84);
+}
+.Tabla .Particion h3 {
+  display: inline;
+  font-size: 30px;
+  left: 0;
+  margin-bottom: 0;
+}
+.Tabla .Particion h4 {
+  display: inline;
+  right: 0;
+  font-size: 40px;
+  margin: 0%;
+}
+.Tabla .Particion p {
+  font-size: 15px;
+  top: 0;
+  margin-top: 0;
+}
+ion-icon {
+  width: 100%;
+  height: 100%;
+}
+
+/*Octava Particion*/
+.footer {
+  min-height: 240px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  margin: 0 !important;
+}
+
+.footer div {
+  background-color: transparent;
+  width: 25%;
+  height: 100%;
+  margin: auto 10px;
+}
+
+/*Informacion de Grupo*/
+.grupo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.grupo__1Integrante,
+.grupo__2Integrante,
+.grupo__3Integrante {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
+}
+.grupo div img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline;
+}
+.grupo div i {
+  margin-left: 35px;
+  display: inline;
+  color: rgb(255, 255, 255);
+}
+.grupo h3 {
+  color: rgb(255, 255, 255);
+}
+
+/*Calculadoras/Simuladores*/
+.Calculadoras {
+  margin: auto 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Calculadoras a {
+  display: block;
+  height: 30px;
+  width: 1fr;
+  margin: 10px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.Calculadoras h3 {
+  color: rgb(255, 255, 255);
+}
+
+/*Capacitaciones*/
+.Capacitaciones {
+  margin: auto 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Capacitaciones a {
+  display: block;
+  height: 30px;
+  width: 1fr;
+  margin: 10px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.Capacitaciones h3 {
+  color: rgb(255, 255, 255);
+}
+
+/*REDES SOCIALES*/
+.Redes_Sociales {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 1fr;
+  margin: 10px;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  padding: 1fr;
+  text-align: right;
+}
+.Redes-Sociales__Texto {
+  text-align: left;
+}
+.Redes__Sociales {
+  display: flex;
+  flex-direction: row;
+}
+.Redes-Sociales_Facebook img {
+  width: 70px;
+  margin-right: 15px;
+}
+.Redes-Sociales_Twitter img {
+  width: 60px;
+  margin-right: 15px;
+}
+.Redes-Sociales_Instagram img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+.Pretabla-flex__Agregar .inputAgregar {
+  background-color: aquamarine;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 10%;
+}
+.Pagina-Agregar {
+  display: none;
+  position: absolute;
+  width: 65%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 1vh solid rgb(10, 54, 5);
+  vertical-align: center;
+  top: 30%;
+  left: 15%;
+}.Pretabla-flex__Agregar .inputAgregar:checked ~ .Pagina-Agregar{
+  display: initial;
+}
+
+/*NOMBRE DE CUENTA*/
+.form-agregar-nombre {
+  position: relative;
+  margin: 0 0 0 2%;
+  width: 80%;
+  border-bottom: 2px solid rgb(0, 54, 14);
+}
+.inputAgregar {
+  display: none;
+}
+.form-agregar-nombre .labelnombrenueva {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  color: rgb(6, 49, 0);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+.inputnombre:focus ~ .labelnombrenueva,
+.inputnombre:valid ~ .labelnombrenueva {
+  font-size: 0.7em;
+  opacity: 1;
+  top: -10%;
+}
+.form-agregar-nombre input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: rgb(0, 0, 0);
+}
+
+.particion2 {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 8% 2% 8%;
+}
+/*MONTO DE CUENTA*/
+.form-agregar-balance {
+  position: relative;
+  margin: 4% 15% 2% 2%;
+  width: 40%;
+  height: 40%;
+  border-bottom: 2px solid rgb(0, 54, 14);
+}
+.form-agregar-balance .labelbalance {
+  position: absolute;
+  top: -10%;
+  left: 2%;
+  color: rgb(6, 49, 0);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+.inputbalance:focus ~ .labelbalance,
+.inputbalance:valid ~ .labelbalance {
+  font-size: 0.7em;
+  opacity: 1;
+  top: -80%;
+}
+.form-agregar-balance .inputbalance {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+/*SWTICH PRUEBA*/
+.form-agregar-prueba {
+  min-height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-agregar-prueba .switch {
+  height: 100%;
+  background-color: rgb(142, 243, 149);
+  padding: 0 1.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.form-agregar-prueba .switch input {
+  display: none;
+}
+.form-agregar-prueba .switch .rail {
+  position: relative;
+  width: 120px;
+  height: 20px;
+  background-color: rgb(143, 139, 139);
+  border-radius: 3rem;
+  margin-right: 20%;
+}
+.form-agregar-prueba .switch .rail .circle {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: linear-gradient(
+    to right,
+    rgb(30, 6, 215) 0%,
+    rgb(61, 210, 247) 100%
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  transition: 0.4s;
+}
+.form-agregar-prueba .switch .indicators {
+  width: 30px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-left: 15%;
+  transition: 0.4s;
+}
+.form-agregar-prueba .switch .input:checked ~ .rail .circle {
+  transform: translate(28px, -50%);
+}
+.form-agregar-prueba .switch .input:checked ~ .indicators {
+  background-color: rgb(33, 108, 248);
+}
+
+/*Especificacion*/
+.form-agregar-especificacion {
+  position: relative;
+  margin: 4% 15% 2% 2%;
+  width: 90%;
+  height: 40%;
+  border-bottom: 2px solid rgb(0, 54, 14);
+}
+.form-agregar-especificacion .labelespecificacion {
+  position: absolute;
+  top: -10%;
+  left: 2%;
+  color: rgb(6, 49, 0);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+.inputespecificacion:focus ~ .labelespecificacion,
+.inputespecificacion:valid ~ .labelespecificacion {
+  font-size: 0.7em;
+  opacity: 1;
+  top: -80%;
+}
+.form-agregar-especificacion .inputespecificacion {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+/*Boton cuenta*/
+.button-agregarDivision {
+  margin: 2% 10% 2% 60% !important;
+  width: 25% !important;
+  line-height: 325%;
+  font-size: 16px;
+  background-color: rgb(142, 243, 149);
+  border: 2px solid rgb(0, 54, 14);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,137 @@
+/* NUEVOOO */
+
+/* Simuladores Plazo Fijo */
+@media only screen and (max-width: 1023px){
+ #Body .Theme_Responsive_20072_home3 li {
+  width: 100%!important;
+ }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+ #Body .Theme_Responsive_20072_home3 .form_input_periodo {
+  padding-top: 0px !important;
+  padding-bottom: 6px;
+ }
+ 
+ #Body .Theme_Responsive_20072_home3 .form_input {
+  padding-bottom: 6px !important;
+ } 
+ 
+ 
+ #Body .total_box_disabled,
+ #Body .total_box_enabled{
+  display: block;
+  height: auto;
+ }
+ #Body .total_box_disabled .dnntable,
+ #Body .total_box_enabled .dnntable{
+  display: block;
+ }
+ #Body .total_box_disabled .dnntable tbody,
+ #Body .total_box_enabled .dnntable tbody{
+  display: block;
+ }
+ #Body .total_box_disabled .dnntable tr,
+ #Body .total_box_enabled .dnntable tr{
+  display: block;
+  width: 100%;
+ }
+ #Body .total_box_disabled .dnntable td,
+ #Body .total_box_enabled .dnntable td{
+  display: block;
+  width: 100%;
+  padding: 4px 15px 5px !important;
+ }
+ #Body .total_box_disabled .dnntable tr td:nth-child(2),
+ #Body .total_box_enabled .dnntable tr td:nth-child(2){
+  text-align: right;
+ }
+}
+
+/* Home noticias */
+@media only screen and (max-width: 1200px) and (min-width: 769px){
+ #Body ul.Theme_08_Default.pro-img-list.numbercolumns-1.numberLarge-3.numbertablet-1.numberphone-1 li{
+  width: 33.3333%;
+  vertical-align: top;
+  float: none !important;
+ }
+}
+
+/* General */
+#Body .row {
+ margin-left: 0;
+ margin-right: 0;
+}
+#Body ul.Theme_08_Default.pro-img-list.numbercolumns-1.numberLarge-3.numbertablet-1.numberphone-1 li .pro-photo{
+ margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 768px){
+ #Body ul.Theme_08_Default.pro-img-list.numbercolumns-1.numberLarge-3.numbertablet-1.numberphone-1 li{
+  float: none !important;
+ }
+ 
+ #Body ul.Theme_08_Default.pro-img-list{
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+}
+
+#Body ul.Theme_08_Default.pro-img-list li{
+    float: none;
+    display: table-cell;
+    height: 100%;
+}
+
+#Body ul.Theme_08_Default.pro-img-list li .pro-photo{
+    height: 100%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+	#Body .col-sm-8.encuestas{
+		width:100%;
+	}
+	#Body .col-sm-4.encuestas{
+		width:100%;
+	}
+	
+	
+}
+
+
+/* Header y menú */
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+ #Body .header_top .ht_right:before{
+  display: none;
+ }
+ #Body .header_top .ht_right{
+  float: right;
+ }
+ 
+ #Body .header_top{
+  line-height: initial;
+ }
+ 
+ #Body .header_top .head_mid .ht_right .languageBox {
+  display: none;
+ }
+ #Body .header_top .head_mid .ht_right .Login  {
+  display: none;
+ }
+ #dnngo_megamenu > div > ul > li > a > span {
+		padding: 0 8px !important;
+		font-size: 10px !important;
+ }
+}
+
+/* FIN NUEVO */
+
+
+
+
+
+
+

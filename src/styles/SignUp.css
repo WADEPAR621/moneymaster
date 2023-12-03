@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+body{
+    background-image: url("https://lh3.googleusercontent.com/proxy/3zv8Pb12nTYBvvLUlaja30u5RvIWyTp3zQJtmFkIBpBUDnxnLLluwahQ_iq6N4gyv7jEp7sXCRG23AvVyaFY3HozEA90U9QLr1ucGlawp0Y0_-fODQbaVOjd0RCJrbmNHJMXSqgMmqt7jWZYWOofZFpSq59a3bC7M9c_AMhi3xfw4KPvDsNr97WYrcrRF-GMPmxKrJu4WuTTFDS-eM8ZWX_7WFSmTE3FK_k4=s2560-w2560-h1440-fcrop64=1,000023d6fffffe04-k-no-nd-mv");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(0,0,0,0.001), rgba(0,0,0,0.001));
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    gap: 60px;
+    
+}
+.form-group__SIGNUP{
+    border-radius: 12px;
+    position: relative;
+    top: 7%;
+    width: 70%;
+    background: rgba(140, 211, 145, 0.2);
+    border: 3px solid rgba(19, 144, 36, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 1000px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 1.5px 1.5px 40px rgba(60, 99, 63, 0.685);
+}
+
+.form-group__SIGNUP .inputbox{
+    position: relative;
+    margin: 5px 0 ;
+    width: 100%;
+    border-bottom: 2px solid rgb(3, 77, 6);
+}
+.form-group__SIGNUP #inputbox__Nombre{
+    display: inline-block ;
+    width: 310px;
+    flex-direction: column-reverse;
+}
+#inputbox__Apellido{
+    display: inline-block;
+    width: 310px;
+}
+
+#inputbox__Date{
+    left: 135px;
+}
+
+.form-group__SIGNUP .inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(4, 66, 8);
+    font-size: 1em;
+    pointer-events:none ;
+    transition: .5s;
+    opacity: .5;
+}
+
+
+.form-group__SIGNUP input:focus ~ label, .form-group__SIGNUP input:valid ~ label{
+    top: 1px ;
+    font-size: 12px;
+    opacity: 1;
+
+}
+input:focus ~ #inputbox__Date, input:valid ~ #inputbox__Date {
+    left: 0px;
+}
+.form-group__SIGNUP .inputbox input{
+    width: 100%;
+    height: 50px ;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 30px 0 5px;
+    color:rgb(3, 91, 23) ;
+}
+
+.form-group__SIGNUP h1{
+    color: rgb(3, 82, 10);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group__SIGNUP .boton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color:rgb(31, 157, 31);
+    width: 30%;
+    border: 0;
+    padding: 15px;
+    color: rgb(2, 58, 6);
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 15px;
+}

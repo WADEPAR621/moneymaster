@@ -1,0 +1,2 @@
+.skeleton-box{background-color:#dddbdd;border-radius:4px;display:inline-block;height:1em;
+    overflow:hidden;position:relative}.skeleton-box:after{animation:shimmer 2s infinite;background-image:linear-gradient(90deg,#fff0,#fff3 20%,#ffffff80 60%,#fff0);bottom:0;content:"";left:0;position:absolute;right:0;top:0;transform:translateX(-100%)}@keyframes shimmer{to{transform:translateX(100%)}}.hidden{display:none}

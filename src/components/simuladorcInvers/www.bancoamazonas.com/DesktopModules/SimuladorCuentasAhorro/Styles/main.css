@@ -1,0 +1,129 @@
+﻿.total_box_disabled {
+    height: 200px;
+    display: table;
+    background-color: #E4E4E4;
+    margin-top: 28px;
+    width: 100%;
+}
+
+    .total_box_disabled > span {
+        display: table-cell;
+        vertical-align: middle;
+        color: #AAAAAA;
+    }
+
+.total_box_enabled {
+    height: 200px;
+    display: table;
+    background-color: #e32526;
+    margin: 28px 0 11px;
+    width: 100%;
+}
+
+    .total_box_enabled > span {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+    }
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.std_btn{
+    width:100%;
+}
+
+.total_box_disabled .dnntable tr:hover td {
+	background-color: #E4E4E4;
+}
+
+.total_box_enabled .dnntable tr:hover td {
+	background-color: #e32526;
+}
+
+.total_box_enabled .dnntable th, .total_box_enabled .dnntable td {
+    font-size: 15px !important;
+    color: #ffffff !important; 
+}
+
+
+@media only screen and (max-width:767px) {
+    .form_submit .col-sm-6 {
+        padding:0px !important;
+        padding-right:0px !important;
+    }
+}
+
+.field {
+    width: 100%;
+    text-align: right;
+    height: 42px;
+}
+
+.Theme_Responsive_20072_home3 select,
+.Theme_Responsive_20072_home3 textarea,
+.Theme_Responsive_20072_home3 input[type="text"],
+.Theme_Responsive_20072_home3 input[type="password"],
+.Theme_Responsive_20072_home3 input[type="datetime"],
+.Theme_Responsive_20072_home3 input[type="datetime-local"],
+.Theme_Responsive_20072_home3 input[type="date"],
+.Theme_Responsive_20072_home3 input[type="month"],
+.Theme_Responsive_20072_home3 input[type="time"],
+.Theme_Responsive_20072_home3 input[type="week"],
+.Theme_Responsive_20072_home3 input[type="number"],
+.Theme_Responsive_20072_home3 input[type="email"],
+.Theme_Responsive_20072_home3 input[type="url"],
+.Theme_Responsive_20072_home3 input[type="search"],
+.Theme_Responsive_20072_home3 input[type="tel"],
+.Theme_Responsive_20072_home3 input[type="color"],
+.Theme_Responsive_20072_home3 .uneditable-input{
+	padding: 11px 12px 11px 15px !important;
+}
+
+.Theme_Responsive_20072_home3 .form_submit .btn.submit_but {
+    padding: 9px !important;
+    width: 49%;
+    margin-right: 0px !important;
+}
+
+.Theme_Responsive_20072_home3 .form_submit .btn.reset_but {
+    padding: 9px !important;
+    width: 49%;
+    margin-right: 2% !important;
+}
+
+.dnntable th,
+.dnntable td {
+    padding: 12px 30px !important;
+}
+
+
+@media only screen and (max-width:767px) {
+    .results_table {
+        display: none !important;
+    }
+}
+@media only screen and (min-width:768px) {
+    .results_message{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .dnntable th,
+    .dnntable td {
+        padding: 5px 16px;
+    }
+}
+
+@media screen\0 {
+    input.field {
+        padding-right: 10px !important;
+        /*border-right: 10px solid transparent !important;*/
+    }
+}
